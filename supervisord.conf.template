@@ -36,7 +36,7 @@ autorestart=true
 priority=200
 
 [program:x11vnc]
-command=/usr/bin/x11vnc -display :1 -nopw -wait 5 -forever -shared
+command=/usr/bin/x11vnc -display :1 -passwd ${vnc_password} -wait 5 -forever -shared
 autorestart=true
 priority=300
 
