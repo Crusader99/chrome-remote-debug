@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  chrome:
+    build: .
+    shm_size: "1gb"
+    env_file: "default.env"
+    ports:
+      - "9333:9333" # remote-debugging
+      - "5900:5900" # vnc
